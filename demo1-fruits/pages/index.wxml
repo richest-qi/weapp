@@ -1,0 +1,20 @@
+<!-- index.wxml -->
+<view class="container">
+    <view class="list">
+        <view class="item" wx:for="{{list}}" wx:key="id">
+            <view class="item-icon">
+                <image src="{{item.imgUrl}}"/>
+            </view>
+            <view class="item-detail">
+                <view class="title">{{item.title}}</view>
+                <view class="description">{{item.description}}</view>
+                <view class="price">
+                    <text>￥</text><text>{{item.price}}</text><text>元/斤</text>
+                </view>
+                <view class="sales">
+                    <text>已售</text><text>{{item.sales}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

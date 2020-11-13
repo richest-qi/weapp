@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "商品列表",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout":{
+    "request":3000
+  }
+}

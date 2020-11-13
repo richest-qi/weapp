@@ -1,0 +1,54 @@
+/* index.wxss */
+.container{
+    margin-top: 10px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item{
+    display: flex;
+    margin: 0 10px 8px 10px;
+    align-items: center;
+    width: 256px;
+}
+.item-icon{
+    width: 256rpx;
+    height: 256rpx;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+}
+.item-icon image{
+    width: 128rpx;
+    height: 128rpx;
+}
+.title{
+    font-size: 24px;
+}
+.description{
+    font-size: 14px;
+    color: gray;
+}
+.price{
+    margin-top: 10px;
+}
+.price text:nth-of-type(1){
+    color: red;
+}
+.price text:nth-of-type(2){
+    font-size: 18px;
+    color: red;
+}
+.price text:nth-of-type(3){
+    font-size: 12px;
+    margin-left: 3px;
+}
+.sales{
+    margin-top: 10px;
+    color: gray;
+    font-size: 14px;
+}
