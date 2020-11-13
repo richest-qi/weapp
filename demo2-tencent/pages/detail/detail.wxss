@@ -1,0 +1,27 @@
+/* detail.wxss */
+.detail{
+    display: flex;
+}
+.logo-pic{
+    width: 256rpx;
+    height: 256rpx;
+}
+.name{
+    font-size: 30px;
+    color: #2A2E2E;
+    margin-bottom: 10px;
+}
+.label{
+    font-size: 20px;
+    color: #949696;
+    border-bottom: 1px solid #E9ECF0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.msg-box{
+    margin: 8px 15px 0 5px;
+}
+.desc{
+    font-size: 14px;
+    color:#5F6464
+}

@@ -1,0 +1,11 @@
+<!-- detail.wxml -->
+<view class="detail">
+    <view>
+        <image class="logo-pic" src="{{imgUrl}}"/>
+    </view>
+    <view class="msg-box">
+        <view class="name">{{name}}</view>
+        <view class="label">{{label}}</view>
+        <view class="desc">{{desc}}</view>
+    </view>
+</view>

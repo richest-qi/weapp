@@ -1,0 +1,11 @@
+<!-- list.wxml -->
+<view class="list">
+    <view class="item"
+     wx:for="{{items}}" 
+     wx:key="id"
+     id="{{item.id}}"
+     capture-bind:tap="handleTap">
+        <image class="logo-pic" src="{{item.url}}" />
+        <text>{{item.title}}</text>
+    </view>
+</view>
