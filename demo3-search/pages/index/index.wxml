@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="search-container">
+  <view class="search-left">
+    <image src="../../images/search.png" />
+    <input type="text" placeholder="搜索"/>
+  </view>
+  <view class="search-right">
+    <image src="../../images/add.png" />
+  </view>
+</view>
