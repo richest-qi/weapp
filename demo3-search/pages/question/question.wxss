@@ -1,0 +1,80 @@
+/* pages/question/question.wxss */
+.question{
+    padding: 30rpx;
+}
+.tag{
+    font-size: 28rpx;
+    padding: 10rpx 20rpx;
+    margin-right: 20rpx;
+    border-radius: 10rpx;
+    background-color: #eee;
+    color: #555;
+}
+.title{
+    margin: 40rpx 0;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+.detail{
+    margin-bottom: 40rpx;
+    line-height: 40rpx;
+    font-size: 27rpx;
+}
+.detail .text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: justify;
+}
+.expand{
+    -webkit-line-clamp: 0;
+}
+.collapse{
+    -webkit-line-clamp: 5;
+}
+.operation{
+    vertical-align: middle;
+    text-align: right;
+}
+.operation text{
+    color: #8a8a8a;
+}
+.operation image{
+    width: 32rpx;
+    height: 32rpx;
+    vertical-align: middle;
+}
+.action{
+    display: inline-block;
+    font-size: 26rpx;
+}
+.action text:nth-of-type(1){
+    font-weight: bold;
+    margin-right: 6rpx;
+}
+.action:not(:last-child):after{
+    content:"•";
+    color: #8590a6;
+    margin: 0 10rpx;
+    font-size: 16rpx;
+}
+.buttons{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.button{
+    color: #2c2c2c;
+    text-align: center;
+    margin: 20rpx 0;
+}
+.button image{
+    width: 36rpx;
+    height: 36rpx;
+    padding-bottom: 6rpx;
+}
+.button view{
+    font-size: 28rpx;
+}

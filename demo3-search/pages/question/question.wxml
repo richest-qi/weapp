@@ -1,0 +1,51 @@
+<view class="container">
+    <view class="question">
+        <view class="tags">
+            <text class="tag">阅读</text>
+            <text class="tag">电子书</text>
+            <text class="tag">kindle</text>
+            <text class="tag">文学</text>
+            <text class="tag">书籍</text>
+        </view>
+        <view class="title">选择 Kindle 而不是纸质书的原因是什么？</view>
+        <view class="detail">
+            <text class="text {{isExpand?'expand':'collapse'}}">题主认为实体书的优势：
+            \n1.手感好，更适合阅读;\n2.相对而言比kindle更便宜;\n3.书分次购入，就如同分期付款一样成本低。
+            \n不理解kindle的价值在哪儿？\n当然有人说国外专业书很贵，kindle节约钱，题主表示理解，但不能理解使用kindle读小说的行为。
+            </text>
+            <view class="operation" bindtap="handleOpeartion">
+                <text>{{isExpand?"收起":"展开"}}</text>
+                <image src="../../images/{{isExpand?'collapse':'expand'}}.png"></image>
+            </view>
+        </view>
+        <view class="actions">
+            <view class="action">
+                <text>123</text><text>关注</text>
+            </view>
+            <view class="action">
+                <text>234</text><text>评论</text>
+            </view>
+            <view class="action">
+                <text>5678</text><text>浏览</text>
+            </view>
+        </view>
+    </view>
+    <view class="buttons">
+        <view class="button">
+            <image src="../../images/invite.png"/>
+            <view>邀请回答</view>
+        </view>
+        <view class="button">
+            <image src="../../images/video.png" />
+            <view>视频回答</view>
+            </view>
+        <view class="button">
+            <image src="../../images/write.png" />
+            <view>写回答</view>
+        </view>
+        <view class="button">
+            <image src="../../images/follow.png" />
+            <view>关注问题</view>
+        </view>
+    </view>
+</view>

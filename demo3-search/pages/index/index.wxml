@@ -1,10 +1,53 @@
 <!--index.wxml-->
-<view class="search-container">
-  <view class="search-left">
-    <image src="../../images/search.png" />
-    <input type="text" placeholder="搜索"/>
+<scroll-view class="container" 
+            scroll-y="{{true}}"
+            upper-upper-threshold="10"
+            lower-threshold="10"
+            bindscrolltoupper="handleScrollToUpper"
+            bindscrolltolower="handleScrollToLower">
+  <view class="search">
+    <view class="search-left">
+      <image src="../../images/search.png" />
+      <input type="text" placeholder="搜索"/>
+    </view>
+    <view class="search-right">
+      <image src="../../images/add.png" />
+    </view>
   </view>
-  <view class="search-right">
-    <image src="../../images/add.png" />
-  </view>
-</view>
+  <block wx:for="{{items}}" wx:for-index="idx" wx:for-item="item"  wx:key="id">
+    <view class="item">
+      <view class="source">
+        <image src="{{item.imageUrl}}" class="avatar"/>
+        <view class="description">
+          <view >{{item.name}}</view>
+          <view >{{item.text}}</view>
+        </view>
+      </view>
+      <view class="content">
+        <view class="question" bindtap="handleQuestionTap">{{item.question}}</view>
+        <view class="answer" bindtap="handleAnswerTap">
+          <text>{{item.from}} :</text>
+          <text>{{item.answer}}</text>
+        </view>
+        <view class="actions">
+          <view>
+            <view class="action">
+              <image src="../../images/approve.png" />
+              <text >{{item.approveNum}}</text>
+            </view>
+            <view class="action">
+              <image src="../../images/comment.png" />
+              <text >{{item.commentNum}}</text>
+            </view>
+          </view>
+          <view >
+            <view class="action">
+              <image src="../../images/more.png" />
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+
